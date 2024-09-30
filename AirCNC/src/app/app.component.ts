@@ -1,12 +1,18 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { CardServiceComponent } from './layout/components/card-service/card-service.component';
+import { HeaderComponent } from './layout/components/header/header.component';
+import { FooterComponent } from './layout/components/footer/footer.component';
+import { HeroComponent } from './layout/components/hero/hero.component';
+import { ServicesCardsComponent } from './layout/components/services-cards/services-cards.component';
+
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CardServiceComponent],
+  imports: [RouterOutlet, HeaderComponent, FooterComponent,
+    HeroComponent, ServicesCardsComponent
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
