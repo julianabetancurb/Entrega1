@@ -10,9 +10,7 @@ import { ServicesCardsComponent } from './layout/components/services-cards/servi
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, FooterComponent,
-    HeroComponent, ServicesCardsComponent
-  ],
+  imports: [RouterOutlet, HeaderComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
