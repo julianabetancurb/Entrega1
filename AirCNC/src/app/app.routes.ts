@@ -14,13 +14,13 @@ export const routes: Routes = [
 
     {path: '', redirectTo: 'home', pathMatch: 'full'},
     {path: 'login', component: LoginComponent },
-    {path: 'sign_up', component: SignUpComponent },
+    {path: 'sign-up', component: SignUpComponent },
     {path: 'home', component: HomeComponent},
     {path: 'profile', component: ViewProfileComponent},
-    {path: 'edit_profile', component: EditProfileComponent},
-    {path: 'create_property', component: CreatePropertyComponent},
-    {path: 'edit_property', component: EditPropertyComponent},
-    {path: 'view_property', component: ViewPropertyComponent},
+    {path: 'edit-profile', component: EditProfileComponent},
+    {path: 'create-property', component: CreatePropertyComponent},
+    {path: 'edit-property', component: EditPropertyComponent},
+    {path: 'view-property', component: ViewPropertyComponent},
     {path: 'search', component: SearchPropertyComponent},
     { path: '**', redirectTo: '/home', pathMatch: 'full' }
     

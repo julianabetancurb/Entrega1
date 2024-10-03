@@ -6,12 +6,14 @@
           <div class="mb-4">
               <label for="email" class="block text-gray-700">Correo Electrónico</label>
               <input type="email" id="email" placeholder="tuemail@example.com" required
-                  class="mt-2 p-2 border border-gray-300 rounded w-full focus:outline-none focus:ring-2 focus:ring-green-700 transition duration-200">
+                  class="mt-2 p-2 border border-gray-300 rounded w-full focus:outline-none focus:ring-2 focus:ring-green-700 transition duration-200"
+                  formControlName="email">
           </div>
           <div class="mb-6">
               <label for="password" class="block text-gray-700">Contraseña</label>
               <input type="password" id="password" placeholder="********" required
-                  class="mt-2 p-2 border border-gray-300 rounded w-full focus:outline-none focus:ring-2 focus:ring-green-700 transition duration-200">
+                  class="mt-2 p-2 border border-gray-300 rounded w-full focus:outline-none focus:ring-2 focus:ring-green-700 transition duration-200"
+                  formControlName="password">
           </div>
           <button type="submit"
               class="w-full py-2 bg-green-700 text-white font-semibold rounded-lg hover:bg-green-800 transition duration-200">Iniciar
@@ -19,7 +21,7 @@
       </form>
       <p class="mt-4 text-center text-gray-600">
           ¿No tienes una cuenta? 
-          <a href="register.html" class="text-green-700 hover:underline">Regístrate aquí</a>
+          <a [routerLink]="['/sign-up']" class="text-green-700 hover:underline">Regístrate aquí</a>
       </p>
   </div>
 
