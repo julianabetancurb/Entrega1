@@ -1,0 +1,50 @@
+<section class="bg-white py-10 md:py-16">
+    <div class="container max-w-screen-xl mx-auto px-4">
+        <h1 class="font-semibold text-3xl md:text-4xl text-gray-900 text-center mb-8">Añadir Nueva Propiedad</h1>
+        <form class="bg-gray-100 p-8 rounded-3xl shadow-md">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Título -->
+                <div>
+                    <label for="title" class="block text-gray-700 font-semibold mb-2">Título</label>
+                    <input type="text" id="title" name="title" placeholder="Título de la propiedad" class="w-full px-4 py-3 bg-white border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-700">
+                </div>
+                <!-- Dirección -->
+                <div>
+                    <label for="address" class="block text-gray-700 font-semibold mb-2">Dirección</label>
+                    <input type="text" id="address" name="address" placeholder="Dirección de la propiedad" class="w-full px-4 py-3 bg-white border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-700">
+                </div>
+                <!-- Precio por Noche -->
+                <div>
+                    <label for="price" class="block text-gray-700 font-semibold mb-2">Precio por Noche</label>
+                    <input type="number" id="price" name="price" placeholder="Ej. 100" min="0" class="w-full px-4 py-3 bg-white border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-700">
+                </div>
+                <!-- Número de Habitaciones -->
+                <div>
+                    <label for="bedrooms" class="block text-gray-700 font-semibold mb-2">Número de Habitaciones</label>
+                    <input type="number" id="bedrooms" name="bedrooms" placeholder="Ej. 3" min="1" class="w-full px-4 py-3 bg-white border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-700">
+                </div>
+                <!-- Número de Baños -->
+                <div>
+                    <label for="bathrooms" class="block text-gray-700 font-semibold mb-2">Número de Baños</label>
+                    <input type="number" id="bathrooms" name="bathrooms" placeholder="Ej. 2" min="1" class="w-full px-4 py-3 bg-white border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-700">
+                </div>
+                <!-- Fechas Disponibles -->
+                <div class="md:col-span-2">
+                    <label for="availability" class="block text-gray-700 font-semibold mb-2">Fechas Disponibles</label>
+                    <input type="text" id="availability" name="availability" placeholder="Selecciona las fechas disponibles" class="w-full px-4 py-3 bg-white border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-700">
+                    <!-- Puedes integrar un selector de fechas como Flatpickr o similar para mejorar la experiencia del usuario -->
+                </div>
+            </div>
+            <!-- Descripción -->
+            <div class="mt-6">
+                <label for="description" class="block text-gray-700 font-semibold mb-2">Descripción</label>
+                <textarea id="description" name="description" rows="5" placeholder="Describe tu propiedad..." class="w-full px-4 py-3 bg-white border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-700"></textarea>
+            </div>
+            <!-- Botón de Envío -->
+            <div class="mt-6 text-center">
+                <button type="submit" class="px-6 py-3 bg-green-700 text-white font-semibold text-lg rounded-xl hover:bg-green-900 transition">Añadir Propiedad</button>
+            </div>
+        </form>
+    </div>
+</section>
+

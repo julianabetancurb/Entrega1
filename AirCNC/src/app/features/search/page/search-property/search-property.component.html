@@ -1,0 +1,49 @@
+<section class="container mx-auto mt-8">
+    <h2 class="text-3xl font-semibold text-gray-900 text-center mb-6">Buscar Propiedades</h2>
+    
+    <!-- Barra de filtros -->
+    <div class="flex justify-end mb-4">
+        <select id="filter" class="p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-700 transition duration-200">
+            <option value="populares">Más populares</option>
+            <option value="precio-asc">Precio: Menor a Mayor</option>
+            <option value="precio-desc">Precio: Mayor a Menor</option>
+        </select>
+    </div>
+
+    <!-- Lista de Propiedades -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Ejemplo de propiedad 1 -->
+        <div class="bg-white shadow-md rounded-lg p-4">
+            <img src="assets/img/propiedad1.jpg" alt="Propiedad 1" class="w-full h-48 object-cover rounded-t-lg">
+            <div class="mt-4">
+                <h3 class="text-lg font-semibold text-gray-900">Casa en la Playa</h3>
+                <p class="text-gray-600 mt-2">Ubicación: Cancún</p>
+                <p class="text-green-700 font-bold mt-2">$2,500 / noche</p>
+                <button class="mt-4 w-full bg-green-700 text-white py-2 rounded-lg hover:bg-green-800 transition duration-200">Ver más</button>
+            </div>
+        </div>
+
+        <!-- Ejemplo de propiedad 2 -->
+        <div class="bg-white shadow-md rounded-lg p-4">
+            <img src="assets/img/propiedad2.jpg" alt="Propiedad 2" class="w-full h-48 object-cover rounded-t-lg">
+            <div class="mt-4">
+                <h3 class="text-lg font-semibold text-gray-900">Apartamento en la Ciudad</h3>
+                <p class="text-gray-600 mt-2">Ubicación: Ciudad de México</p>
+                <p class="text-green-700 font-bold mt-2">$1,500 / noche</p>
+                <button class="mt-4 w-full bg-green-700 text-white py-2 rounded-lg hover:bg-green-800 transition duration-200">Ver más</button>
+            </div>
+        </div>
+
+        <!-- Ejemplo de propiedad 3 -->
+        <div class="bg-white shadow-md rounded-lg p-4">
+            <img src="assets/img/propiedad3.jpg" alt="Propiedad 3" class="w-full h-48 object-cover rounded-t-lg">
+            <div class="mt-4">
+                <h3 class="text-lg font-semibold text-gray-900">Cabina en el Bosque</h3>
+                <p class="text-gray-600 mt-2">Ubicación: Valle de Bravo</p>
+                <p class="text-green-700 font-bold mt-2">$3,000 / noche</p>
+                <button class="mt-4 w-full bg-green-700 text-white py-2 rounded-lg hover:bg-green-800 transition duration-200">Ver más</button>
+            </div>
+        </div>
+    </div>
+</section>
+

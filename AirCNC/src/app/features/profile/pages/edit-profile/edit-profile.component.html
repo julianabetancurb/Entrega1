@@ -1,0 +1,63 @@
+<body class="bg-gray-100 flex flex-col items-center justify-start min-h-screen p-6">
+    <div class="bg-white shadow-md rounded-lg p-8 w-full max-w-3xl">
+        <h2 class="text-2xl font-semibold text-gray-900 mb-6">Editar Perfil</h2>
+
+        <!-- Formulario de edición del perfil -->
+        <form action="/ruta-de-actualizacion" method="POST" enctype="multipart/form-data">
+            <!-- Sección para cambiar la foto de perfil -->
+            <div class="mb-6">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="fotoPerfil">
+                    Foto de Perfil
+                </label>
+                <div class="flex items-center">
+                    <img id="foto-preview" src="https://via.placeholder.com/150" alt="Foto Actual"
+                        class="w-24 h-24 rounded-full object-cover border border-gray-300 mr-4">
+                    <input type="file" name="fotoPerfil" id="fotoPerfil" accept="image/*"
+                        class="text-gray-600 text-sm bg-gray-100 border border-gray-300 rounded-md p-2"
+                       >
+                </div>
+            </div>
+
+            <!-- Campo Nombre -->
+            <div class="mb-6">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="nombre">
+                    Nombre
+                </label>
+                <input type="text" name="nombre" id="nombre" value="Nombre del Usuario"
+                    class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                    required>
+            </div>
+
+            <!-- Campo Correo Electrónico -->
+            <div class="mb-6">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="correo">
+                    Correo Electrónico
+                </label>
+                <input type="email" name="correo" id="correo" value="correo@ejemplo.com"
+                    class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                    required>
+            </div>
+
+            <!-- Campo Biografía -->
+            <div class="mb-6">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="biografia">
+                    Biografía
+                </label>
+                <textarea name="biografia" id="biografia" rows="5"
+                    class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                    placeholder="Cuéntanos algo sobre ti...">Este es el texto de la biografía actual.</textarea>
+            </div>
+
+            <!-- Botón Guardar Cambios -->
+            <div class="flex justify-end">
+                <button type="submit"
+                    class="bg-indigo-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-indigo-500 transition-colors">
+                    Guardar Cambios
+                </button>
+            </div>
+        </form>
+    </div>
+
+   
+
+</body>

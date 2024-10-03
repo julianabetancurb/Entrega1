@@ -1,1 +1,43 @@
-<p>sign-up works!</p>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+    <div class="bg-white shadow-md rounded-lg p-8 w-96">
+        <h2 class="text-2xl font-semibold text-center text-gray-900 mb-6">Crear Cuenta</h2>
+        <form>
+            <div class="mb-4">
+                <label for="name" class="block text-gray-700">Nombre Completo</label>
+                <input type="text" id="name" placeholder="Tu nombre" required
+                    class="mt-2 p-2 border border-gray-300 rounded w-full focus:outline-none focus:ring-2 focus:ring-green-700 transition duration-200">
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-gray-700">Correo Electrónico</label>
+                <input type="email" id="email" placeholder="tuemail@example.com" required
+                    class="mt-2 p-2 border border-gray-300 rounded w-full focus:outline-none focus:ring-2 focus:ring-green-700 transition duration-200">
+            </div>
+            <div class="mb-4">
+                <label for="password" class="block text-gray-700">Contraseña</label>
+                <input type="password" id="password" placeholder="********" required
+                    class="mt-2 p-2 border border-gray-300 rounded w-full focus:outline-none focus:ring-2 focus:ring-green-700 transition duration-200">
+            </div>
+            <div class="mb-6">
+                <label for="confirm-password" class="block text-gray-700">Confirmar Contraseña</label>
+                <input type="password" id="confirm-password" placeholder="********" required
+                    class="mt-2 p-2 border border-gray-300 rounded w-full focus:outline-none focus:ring-2 focus:ring-green-700 transition duration-200">
+            </div>
+            <div class="mb-6">
+                <label for="role" class="block text-gray-700">Tipo de Usuario</label>
+                <select id="role" required
+                    class="mt-2 p-2 border border-gray-300 rounded w-full focus:outline-none focus:ring-2 focus:ring-green-700 transition duration-200">
+                    <option value="usuario">Usuario</option>
+                    <option value="propietario">Propietario</option>
+                </select>
+            </div>
+            <button type="submit"
+                class="w-full py-2 bg-green-700 text-white font-semibold rounded-lg hover:bg-green-800 transition duration-200">Registrarse</button>
+        </form>
+        <p class="mt-4 text-center text-gray-600">
+            ¿Ya tienes una cuenta? 
+            <a href="login.html" class="text-green-700 hover:underline">Inicia sesión aquí</a>
+        </p>
+    </div>
+
+</body>
