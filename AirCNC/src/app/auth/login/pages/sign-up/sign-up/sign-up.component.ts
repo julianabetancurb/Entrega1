@@ -30,6 +30,7 @@ export class SignUpComponent implements OnInit{
 
 
   onRegister() {
+    console.log(this.signUpForm.value);
     if (!this.signUpForm.valid) {
       Swal.fire({
         text:'Debe diligenciar todos los campos',

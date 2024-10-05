@@ -1,6 +1,37 @@
+
+@if(this.user().userName && this.user().rol===roles[0]){
 <nav class="navbar">
     <div class="logo-container">
-      <img src="../assets/image/logo aircnc.png" alt="Logo img" class="logo">
+      <img src="" alt="Logo img" class="logo">
+      <button class="menu-toggle" (click)="navbarOpen = !navbarOpen">
+        <i data-feather="menu"></i>
+      </button>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#">Populares</a></li>
+      <li><a href="#">Subir</a></li>
+      <li><a href="#">Contacto</a></li>
+      <li><a href="#">Sobre Nosotros</a></li>
+    </ul>
+    <a (click)="logout()">Cerrar sesión</a>
+</nav>
+}@else if(this.user().userName && this.user().rol===roles[1]){
+  <nav class="navbar">
+    <div class="logo-container">
+      <img src="" alt="Logo img" class="logo">
+      <button class="menu-toggle" (click)="navbarOpen = !navbarOpen">
+        <i data-feather="menu"></i>
+      </button>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#">Subir</a></li>
+    </ul>
+    <a (click)="logout()">Cerrar sesión</a>
+</nav>
+}@else{
+  <nav class="navbar">
+    <div class="logo-container">
+      <img src="" alt="Logo img" class="logo">
       <button class="menu-toggle" (click)="navbarOpen = !navbarOpen">
         <i data-feather="menu"></i>
       </button>
@@ -13,3 +44,4 @@
     </ul>
     <button class="login-btn" [routerLink]="['/login']">Iniciar sesión</button>
 </nav>
+}

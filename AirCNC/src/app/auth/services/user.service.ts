@@ -46,6 +46,15 @@ export class UserService {
     this.userSignal.set(user);
   }
 
+  getUser(){
+    const userSrt = localStorage.getItem('loggedUser');
+    if(userSrt){
+      const user = JSON.parse(userSrt);
+      this.userSignal.set(user);
+    }
+    return this.userSignal;
+  }
+
   register(user:User): SignUpResponse{
     if (localStorage.getItem(user.email.toLowerCase().trim())) {
       return {
