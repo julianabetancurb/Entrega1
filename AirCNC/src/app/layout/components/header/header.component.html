@@ -24,7 +24,8 @@
       </button>
     </div>
     <ul class="nav-links">
-      <li><a href="#">Subir</a></li>
+      <li><a [routerLink]="['/create-property']">Subir Propiedad</a></li>
+      <li><a [routerLink]="['/search']">Mis Propiedades</a></li>
     </ul>
     <a (click)="logout()">Cerrar sesión</a>
 </nav>

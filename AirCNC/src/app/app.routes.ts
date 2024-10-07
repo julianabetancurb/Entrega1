@@ -8,6 +8,8 @@ import { CreatePropertyComponent } from './features/properties/pages/create-prop
 import { EditPropertyComponent } from './features/properties/pages/edit-property/edit-property.component';
 import { ViewPropertyComponent } from './features/properties/pages/view-property/view-property.component';
 import { SearchPropertyComponent } from './features/search/page/search-property/search-property.component';
+import { ViewProfileOwnerComponent } from './features/profile-owner/pages/view-profile-owner/view-profile-owner.component';
+import { EditProfileOwnerComponent } from './features/profile-owner/pages/edit-profile-owner/edit-profile-owner.component';
 
 
 export const routes: Routes = [
@@ -17,7 +19,9 @@ export const routes: Routes = [
     {path: 'sign-up', component: SignUpComponent },
     {path: 'home', component: HomeComponent},
     {path: 'profile', component: ViewProfileComponent},
+    {path: 'profile-owner', component: ViewProfileOwnerComponent},
     {path: 'edit-profile', component: EditProfileComponent},
+    {path: 'edit-profile-owner', component: EditProfileOwnerComponent},
     {path: 'create-property', component: CreatePropertyComponent},
     {path: 'edit-property', component: EditPropertyComponent},
     {path: 'view-property', component: ViewPropertyComponent},

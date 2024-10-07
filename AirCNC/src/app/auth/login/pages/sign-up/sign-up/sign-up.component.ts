@@ -38,6 +38,7 @@ export class SignUpComponent implements OnInit{
       })
       return;
     }
+    let id = this.generateId();
     let userName = this.signUpForm.value.userName || '';
     let email = this.signUpForm.value.email || '';
     let password = this.signUpForm.value.password || '';
@@ -54,7 +55,8 @@ export class SignUpComponent implements OnInit{
 
     let response = this.userService.register({
       userName, password, email,
-      rol: rol
+      rol: rol,
+      id: id
     })
     if(response.success){
       this.router.navigateByUrl('/home');
@@ -67,4 +69,10 @@ export class SignUpComponent implements OnInit{
 
   }
 
+  generateId(): string {
+    return Math.random().toString(36).substr(2, 9);
+  }
+
 }
+
+

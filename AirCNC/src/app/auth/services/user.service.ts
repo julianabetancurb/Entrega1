@@ -9,7 +9,8 @@ export class UserService {
 
   userSignal = signal<User>({
     userName: '', password: '', email: '',
-    rol: ''
+    rol: '',
+    id: ''
   });
 
   login(email:string, password:string) :LoginResponse{
@@ -37,7 +38,8 @@ export class UserService {
     localStorage.removeItem('loggedUser');
     this.userSignal.set({
       userName: '', password: '', email: '',
-      rol: ''
+      rol: '',
+      id: ''
     });
   }
 
